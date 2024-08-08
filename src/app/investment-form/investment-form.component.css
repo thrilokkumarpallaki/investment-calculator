@@ -1,0 +1,48 @@
+form {
+    background: linear-gradient(180deg, #307e6c, #2b996d);
+    color: white;
+    margin: 4rem auto;
+    padding: 20px 40px; 
+    border-radius: 5px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+div label {
+    display: block;
+    font-size: 12px;
+}
+
+div p {
+    margin: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #c2e9e0;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+
+p input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 16em;
+    border-style: solid;
+    background-color: transparent;
+    color: #c2e9e0;
+    font-size: 16px;
+    outline: none;
+    border-color: #c2e9e0;
+
+}
+
