@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: investment-calculator
+  name: investment-calculator-deployment
+  annotations:
+    link.argocd.aroproj.io/external-link: https://hub.docker.com/repository/docker/thrilokpallaki/investment-calculator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: investment-calculator
+  template:
+    metadata:
+      labels:
+        app: investment-calculator
+    spec:
+      containers:
+      - name: investment-calculator-deployment
+        image: thrilokpallaki/investment-calculator:v2
+        imagePullPolicy: Always
