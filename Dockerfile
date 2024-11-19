@@ -10,7 +10,7 @@ RUN npm run build
 
 FROM nginx:stable-alpine
 
-COPY --from=builder /app/dist/investment-calculator /usr/share/nginx/html
+COPY --from=builder /app/dist/investment-calculator/browser /usr/share/nginx/html
 
 EXPOSE 80
 
