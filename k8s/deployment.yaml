@@ -4,6 +4,7 @@ metadata:
   labels:
     app: investment-calculator
   name: investment-calculator-deployment
+  namespace: investment-calculator
   annotations:
     link.argocd.aroproj.io/external-link: https://hub.docker.com/repository/docker/thrilokpallaki/investment-calculator
 spec:
