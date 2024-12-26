@@ -10,6 +10,7 @@ header {
     background-color: transparent;
   }
   
-  header h1 {
+  header h2 {
     font-size: 1.5rem;
+    font-style: italic;
   }
